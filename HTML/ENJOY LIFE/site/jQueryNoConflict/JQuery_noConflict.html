@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JQuery noConflict - Sibeesh Passion</title>
+    <script src="prototype.js"></script>
+    <script src="JQuery%20Versions/jquery-1.11.1.min.js"></script>
+     <script>
+         // Give $ to prototype.js
+         var $jq = jQuery.noConflict();
+    </script>
+    <script>
+        $jq(document).ready(function () {
+            $jq("#btn").on('click', function () {
+                alert('Clicked');
+            });
+        });
+    </script>
+</head>
+<body>
+    JQuery noConflict - Sibeesh Passion
+     <br />
+    <br />
+    <br />
+     <input type="button" value="" id='btn' />
+</body>
+</html>
