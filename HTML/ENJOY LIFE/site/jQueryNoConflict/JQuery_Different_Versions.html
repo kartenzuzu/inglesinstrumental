@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Use JQuery Different Versions in One Page - Sibeesh Passion</title>
+    
+    <script src="JQuery%20Versions/jquery-1.9.0.min.js"></script>
+    <script>
+        var jQuery190 = jQuery.noConflict();
+        window.jQuery = jQuery190;
+    </script>
+    <script src="JQuery%20Versions/jquery-1.10.1.min.js"></script>
+    <script>
+        var jQuery1101 = jQuery.noConflict();
+        window.jQuery = jQuery1101;
+    </script>
+    <script src="JQuery%20Versions/jquery-1.11.0.min.js"></script>
+    <script>
+        var jQuery1110 = jQuery.noConflict();
+        window.jQuery = jQuery1110;
+    </script>
+    <script src="JQuery%20Versions/jquery-1.11.1.min.js"></script>
+    <script>
+        var jQuery1111 = jQuery.noConflict();
+        window.jQuery = jQuery1111;
+    </script>
+    <script src="JQuery%20Versions/jquery-1.11.3.min.js"></script>
+    <script>
+        //var jQuery1113 = jQuery.noConflict();
+        //window.jQuery = jQuery1113;
+    </script>
+    <script>
+        jQuery190(document).ready(function ($) {
+            //The codes for jQuery 1-9-0
+            $("#btn190").on('click', function () {
+                alert($.fn.jquery);
+            })
+        });
+        jQuery1101(document).ready(function ($) {
+            //The codes for jQuery 1-10-1
+            $("#btn1101").on('click', function () {
+                alert($.fn.jquery);
+            })
+        });
+        jQuery1110(document).ready(function ($) {
+            //The codes for jQuery 1-11-0
+            $("#btn1110").on('click', function () {
+                alert($.fn.jquery);
+            })
+        });
+        jQuery1111(document).ready(function ($) {
+            //The codes for jQuery 1-11-1
+            $("#btn1111").on('click', function () {
+                alert($.fn.jquery);
+            })
+        });
+        jQuery1113(document).ready(function ($) {
+            //The codes for jQuery 1-11-3
+            $("#btn1113").on('click', function () {
+                alert($.fn.jquery);
+            })
+        });
+    </script>
+</head>
+<body>
+    Use JQuery Different Versions in One Page
+    <br />
+    <br />
+    <br />
+    <input type="button" value="Use jQuery 1.9.0" id='btn190' />
+    <input type="button" value="Use jQuery 1.10.1" id='btn1101' />
+    <input type="button" value="Use jQuery 1.11.0" id='btn1110' />
+    <input type="button" value="Use jQuery 1.11.1" id='btn1111' />
+    <input type="button" value="Use jQuery 1.11.3" id='btn1113' />
+</body>
+</html>
