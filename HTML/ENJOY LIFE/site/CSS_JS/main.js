@@ -389,6 +389,7 @@ jQuery(document).on('ready', function () {
 });
 // instance of fuction while Window Load event
 jQuery(window).on('load', function () {
+  $('whateverYouWantToClick').makeItRain();
    (function ($) {
       galleryMasonry();
    })(jQuery);
@@ -400,3 +401,5 @@ jQuery(window).on('scroll', function () {
       animation();
    })(jQuery);
 });
+
+$('.fa-facebook').makeItRain();
